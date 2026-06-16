@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>မင်းလေးအတွက် ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts-container"></div>
+
+<section class="hero glass">
+    <h1>အချေဝေး စိတ်မကောက်ပါကေ့ဖိနန်း ကိုမင်းအတွက် 🥺❤️</h1>
+    <p>မင်းအတွက် အထူးလုပ်ထားတဲ့ Website တစ်ခုပါ</p>
+</section>
+
+<section class="glass card">
+    <h2>ကမ္ဘာပေါ်မှာ ဘယ်သူအလှဆုံးလဲ?</h2>
+
+    <button onclick="showResult(
+        'assets/images/beautiful-girl.jpg',
+        'ရွေးချယ်မှုမှားပါတယ် 😅<br>အဖြေမှန်က <b>မင်းလေးပေါ့ ❤️</b>'
+    )">
+        လီဆာ
+    </button>
+   <button onclick="showResult('assets/images/beautiful-girl.jpg','မင်းလေးပေါ့ ❤️')">
+        ရို့စ်
+    </button>
+
+    <button onclick="showResult('assets/images/beautiful-girl.jpg','မင်းလေးပေါ့ ❤️')">
+        ဂျူလီယက်
+    </button>
+</section>
+
+<section class="glass card">
+    <h2>ငါ့အတွက် အရေးအကြီးဆုံးသူက ဇာသူလဲ?</h2>
+
+    <button onclick="showResult('assets/images/love.jpg','မင်းလေးပဲ 💕')">
+        Friend
+    </button>
+
+    <button onclick="showResult('assets/images/love.jpg','မင်းလေးပဲ 💕')">
+        Celebrity
+    </button>
+
+    <button onclick="showResult('assets/images/love.jpg','မင်းလေးပဲ 💕')">
+        Someone Special
+    </button>
+</section>
+
+<section class="glass card">
+    <h2>ငါအချစ်ဆုံးသူက ဇာသူလဲ?</h2>
+
+    <button onclick="showResult('assets/images/soulmate.jpg','မင်းလေးတစ်ယောက်တည်း 💖')">
+        A
+    </button>
+
+    <button onclick="showResult('assets/images/soulmate.jpg','မင်းလေးတစ်ယောက်တည်း 💖')">
+        B
+    </button>
+
+    <button onclick="showResult('assets/images/soulmate.jpg','မင်းလေးတစ်ယောက်တည်း 💖')">
+        C
+    </button>
+</section>
+
+<section class="gift glass" onclick="openVideo()">
+    <h2>မင်းအတွက် ရွယ်ရည်ပြီးလုပ်ထားစွာပါ 🎁</h2>
+    <p>ဒီ Box ကိုနှိပ်ပြီး ကြည့်လိုက်ပါ ❤️</p>
+</section>
+
+<div class="modal" id="resultModal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeResult()">&times;</span>
+
+        <img id="popupImage">
+
+        <h2 id="popupText"></h2>
+
+    </div>
+
+</div>
+
+<div class="modal" id="videoModal">
+
+    <div class="video-content">
+
+        <span class="close" onclick="closeVideo()">&times;</span>
+
+        <video controls>
+            <source src="assets/videos/video.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+</div>
+
+<footer>
+    Made with ❤️ for You
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
